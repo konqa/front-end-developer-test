@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Height and Age Classifier</title>
+
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+
+<body>
+  
+  <div class="section no-pad-bot">
+    <div class="container">
+      <br><br>
+
+      <h2 class="header center orange-text">Height and Age Classifier<br><br></h2>
+
+  <div class="row">
+    <form class="col s7 offset-s4">
+      <div class="row center">
+        <div class="input-field col s3">
+          <input placeholder="9" id="age" type="number" class="validate">
+          <label for="age">Age</label>
+        </div>
+        <div class="input-field col s3">
+          <input placeholder="1.2" id="height" type="number" step=".01" class="validate">
+          <label for="height">Height</label>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <div class="row center">
+    <button href="#" id="classify-button" class="btn-large waves-effect waves-light orange" onclick="classify()">Classify</button>
+  </div>
+
+  <div class="row center" id="person-class" style="display: none"><br><br>
+    <h5 id="person-class-text" class="header col s12 light"></h5>
+  </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
